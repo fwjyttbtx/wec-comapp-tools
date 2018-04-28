@@ -16,7 +16,13 @@ import {
     TableColumn,
     Input,
     Menu,
-    MenuItem
+    MenuItem,
+    Dialog,
+    Form,
+    FormItem,
+    Pagination,
+    Tooltip,
+    Loading
 } from 'element-ui'
 import App from './App.vue'
 import axios from 'axios'
@@ -36,8 +42,14 @@ Vue.use(TableColumn);
 Vue.use(Input);
 Vue.use(Menu);
 Vue.use(MenuItem);
+Vue.use(Dialog);
+Vue.use(Form);
+Vue.use(FormItem);
+Vue.use(Pagination);
+Vue.use(Tooltip);
+Vue.use(Loading.directive);
 
-
+Vue.prototype.$loading = Loading.service;
 Vue.prototype.$http = axios;
 Vue.prototype.$message = Message;
 Vue.prototype.$msgbox = MessageBox;

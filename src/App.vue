@@ -13,6 +13,8 @@
 </template>
 
 <script>
+  import "./assets/base.css"
+
 
   export default {
       methods: {
@@ -24,6 +26,9 @@
 
 </script>
 <style>
+  * {
+    font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;;
+  }
   body {
     margin: 0;
     padding: 0;
